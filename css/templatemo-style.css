@@ -38,6 +38,7 @@ h2
 		text-align: center;
 		font-size: 40px;
 		color: #ccc;
+		margin-bottom: 30px;
 	}	
 h2 span
 	{
@@ -51,6 +52,9 @@ h5
 		text-align: center;
 		font-size: 28px;
 		color: #fb9255;
+	}
+	.section-title h5 {
+		padding: 30px 0;
 	}	
 h5 span
 	{
@@ -321,11 +325,14 @@ header .social-icon li a
 	background-repeat: no-repeat;
 	padding: 60px 0;
 }
-#profile{background: #ffffff;padding: 45px 0;}
+#profile{background: #ffffff;padding: 80px 0 45px;}
 
 .about-img {
 	position: relative;
 	padding: 0;
+}
+.about-txt {
+	padding: 0 15px;
 }
 .about-img:after {
 	content: none;
@@ -339,6 +346,7 @@ header .social-icon li a
 h2.name {
 	color: #333;
 	margin-bottom: 20px;
+	margin-top: 60px;
 }
 .timeline {
 position: relative;
@@ -438,6 +446,9 @@ margin-bottom: 0
 .timeline .timeline-body p{font-size: 17px;}
 
 @media (min-width:768px) {
+	h2.name {
+		margin-top: 20px;
+	}
 .timeline:before {
 left: 50%
 }
@@ -450,6 +461,9 @@ left: 50%
     top: 7%;
     left: -5%;
     z-index: -1;
+}
+.about-txt {
+    padding-left: 40px;
 }
 .timeline>li {
 margin-bottom: 30px
@@ -512,7 +526,7 @@ padding: 0 100px 20px 20px
 /* end about */
 
 /* start service */
-#service{text-align: center;background: #6d6b6b;}
+#service{text-align: center;background: #6d6b6b;padding: 60px 0;}
 #service img {
     width: 120px;
 }
@@ -644,14 +658,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333', endCol
 }
 
 /* start portfolio */
-.portfolio-section {
-    padding-top: 80px;
-    padding-bottom: 120px;
-    background: #ffffff;
+#portfolio.portfolio-section .container{
+    
+    margin: 0 auto 60px;
+    
 }
 #hand-painted {
 	background: #f5f5f5;
-	padding-top: 30px;
+	padding: 0 0 30px;
 }
 #graphic.portfolio-section{
 	padding: 0;padding-bottom: 30px;
@@ -1166,10 +1180,10 @@ and (min-width : 551px){
 .btn-success {
     color: #fff;
     background-color: #fb9255;
-    border-color: #04b0ce;
+    border-color: #fb9255;
 }
 .btn-success.active, .btn-success.focus, .btn-success:active, .btn-success:focus, .btn-success:hover, .open>.dropdown-toggle.btn-success {
     color: #fff;
-    background-color: #00b199;
-    border-color: #018a77;
+    background-color: #333;
+    border-color: #333;
 }
